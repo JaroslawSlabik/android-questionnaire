@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5sp"
+    tools:context=".SummaryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16sp"
+        android:paddingLeft="16sp"
+        android:paddingTop="16sp"
+        android:paddingRight="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:id="@+id/m_text_name_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:text="Imię:"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:id="@+id/m_text_name_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="value" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:id="@+id/m_text_surname_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:text="Nazwisko:"
+                    android:textAlignment="viewEnd"/>
+
+                <TextView
+                    android:id="@+id/m_text_surname_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="value" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:id="@+id/m_text_street_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:text="Ulica:"
+                    android:textAlignment="viewEnd"/>
+
+                <TextView
+                    android:id="@+id/m_text_street_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="value"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:text="Miasto:"
+                    android:textAlignment="viewEnd"/>
+
+                <TextView
+                    android:id="@+id/m_text_city_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="value" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:id="@+id/m_text_born_date_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:text="Data urodzenia:"
+                    android:textAlignment="viewEnd"/>
+
+                <TextView
+                    android:id="@+id/m_text_born_date_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="value"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:id="@+id/m_text_favorite_color_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:text="Ulubiony kolor:"
+                    android:textAlignment="viewEnd"/>
+
+                <TextView
+                    android:id="@+id/m_text_favorite_color_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="value"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:id="@+id/m_text_favorite_activities_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:text="Ulubione zajęcia:"
+                    android:textAlignment="viewEnd"/>
+
+                <TextView
+                    android:id="@+id/m_text_favorite_activities_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="value"
+                    android:textAllCaps="false"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5sp">
+
+                <Button
+                    android:id="@+id/m_button_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:onClick="buttonEditClicked"
+                    android:text="Edytuj"/>
+
+                <Button
+                    android:id="@+id/m_button_save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="buttonSaveClicked"
+                    android:text="Zapisz" />
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

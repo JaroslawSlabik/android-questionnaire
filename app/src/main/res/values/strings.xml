@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">questionnaire</string>
+    <string-array name="name_favourite_activity">
+        <item name="item1">Latanie</item>
+        <item name="item2">Czytanie</item>
+        <item name="item3">Śpiewanie</item>
+        <item name="item4">Programowanie</item>
+        <item name="item5">Oglądanie</item>
+    </string-array>
+
+    <string-array name="description_favourite_activity">
+        <item name="item1">Latanie jest fajne...</item>
+        <item name="item2">Czytanie jest fajne gdy jest dobra książka</item>
+        <item name="item3">Śpiewanie jest fajne bo każdy śpiewać może jeden lepiej a drugi...</item>
+        <item name="item4">Programowanie jest fajne bo TAK int main(){return 0;}</item>
+        <item name="item5">Oglądanie...</item>
+    </string-array>
+
+
+</resources>

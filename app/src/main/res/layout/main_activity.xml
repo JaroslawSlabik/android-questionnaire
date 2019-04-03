@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5sp"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_name_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text="Imię*"
+                    android:textAlignment="viewEnd" />
+
+                <EditText
+                    android:id="@+id/m_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:text="" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_surname_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text="Nazwisko*"
+                    android:textAlignment="viewEnd" />
+
+                <EditText
+                    android:id="@+id/m_surname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_city_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text="Miasto*"
+                    android:textAlignment="viewEnd" />
+
+                <EditText
+                    android:id="@+id/m_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_street_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text="Ulica*"
+                    android:textAlignment="viewEnd" />
+
+                <EditText
+                    android:id="@+id/m_street"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_date_bord_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text="Data urodzenia*"
+                    android:textAlignment="viewEnd" />
+
+                <DatePicker
+                    android:id="@+id/m_date_born"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_favourite_color_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text="Ulubiony kolor*"
+                    android:textAlignment="viewEnd" />
+
+                <RadioGroup
+                    android:id="@+id/m_favourite_color_radio_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/m_red_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="favouriteColorRadioGroupClicked"
+                        android:text="Czerwony"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/m_blue_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="favouriteColorRadioGroupClicked"
+                        android:text="Niebieski"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/m_green_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="favouriteColorRadioGroupClicked"
+                        android:text="Zielony"></RadioButton>
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_favourite_activities"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text="Ulubione zajęcia"
+                    android:textAlignment="viewEnd" />
+
+                <CheckBox
+                    android:id="@+id/m_check_box_fly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="favouriteActivitiesCheckGroupClicked"
+                    android:text="Latanie" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_blank1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd" />
+
+                <CheckBox
+                    android:id="@+id/m_check_box_reading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="favouriteActivitiesCheckGroupClicked"
+                    android:text="Czytanie" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_blank2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd" />
+
+                <CheckBox
+                    android:id="@+id/m_check_box_singing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="favouriteActivitiesCheckGroupClicked"
+                    android:text="Śpiewanie" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_blank3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd" />
+
+                <CheckBox
+                    android:id="@+id/m_check_box_programing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="favouriteActivitiesCheckGroupClicked"
+                    android:text="Programowanie" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_blank4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="viewEnd" />
+
+                <CheckBox
+                    android:id="@+id/m_check_box_watching"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="favouriteActivitiesCheckGroupClicked"
+                    android:text="Oglądanie" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/m_button_refresh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:onClick="buttonRefreshClicked"
+                    android:text="Odśwież" />
+
+                <Button
+                    android:id="@+id/m_button_summary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="buttonSummaryClicked"
+                    android:text="Podsumowanie" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_blank5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5sp"
+                    android:text=""
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:id="@+id/m_field_required_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="* - pola wymagane"
+                    android:textColor="#FF0000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5sp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/m_list_view_for_presentation_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Lista fajna" />
+
+                <ListView
+                    android:id="@+id/m_list_view_for_presentation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="320sp"
+                    android:layout_marginRight="5sp" />
+
+            </TableRow>
+        </TableLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
